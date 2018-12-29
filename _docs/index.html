@@ -1,0 +1,46 @@
+---
+layout: default
+title: Stuart Hua's Site
+permalink: index.html
+---
+
+<main class="container">
+  <section class="content">
+    <span class="title">Stuart Hua</span>
+    <p id="desc"></p>
+    <a target="_blank" href="https://blog.stuarthua.com/about/">About</a>
+  </section>
+</main>
+{% include footer.html %}
+
+<script>
+  // $(document).ready(function() {
+  //   var width = $(document).width();
+  //   var height = $(document).height();
+  //   var w;
+  //   if (width <= 480) {
+  //     w = 480;
+  //   } else if (width <= 800 ) {
+  //     w = 800;
+  //   } else if (width <= 1024 ) {
+  //     w = 1024;
+  //   } else if (width <= 1920 ) {
+  //     w = 1920;
+  //   }
+  //   var img_url = 'https://api.yingjoy.cn/pic/?t=bing&w=' + w;
+  //   var showBackground = function (target, url) {
+  //     $(target).css("background", "url('" + url + "')");
+  //   }
+  //   setTimeout(function () { showBackground("main.container", img_url); }, 3000);
+  // });
+    
+  var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).append(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+  }
+  $(function () {
+    showText("#desc", "Software Engineer, Programmer", 0, 100);
+  });
+</script>

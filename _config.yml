@@ -1,0 +1,31 @@
+# Site settings
+title: Stuart Hua's Site
+auther: Stuart Hua
+email: stuarthua.cn@gmail.com
+description: "Stuart Hua | Software Engineer, Programmer"
+url: "https://www.stuarthua.com"
+
+# Contacts
+bottom_link:
+  homepage: /
+  home: /home
+  play: /play
+  wiki: /web
+  blog: https://blog.stuarthua.com
+  chat: https://t.me/stuarthua
+  mail: stuarthua.cn@gmail.com
+
+# Advanced settings
+markdown: kramdown
+encoding: utf-8
+assets: /assets
+collections:
+  docs:
+    output: true
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

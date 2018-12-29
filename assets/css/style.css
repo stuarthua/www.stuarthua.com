@@ -1,0 +1,351 @@
+@import url('https://fonts.loli.net/css?family=Raleway:300,900');
+
+/***** Web Fonts *****/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/assets/font/icomoon.eot?p8sxe8');
+  src:  url('/assets/font/icomoon.eot?p8sxe8#iefix') format('embedded-opentype'),
+    url('/assets/font/icomoon.ttf?p8sxe8') format('truetype'),
+    url('/assets/font/icomoon.woff?p8sxe8') format('woff'),
+    url('/assets/font/icomoon.svg?p8sxe8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pic:before {
+  content: "\e909";
+}
+.icon-wiki:before {
+  content: "\e908";
+}
+.icon-game:before {
+  content: "\e907";
+}
+.icon-mail:before {
+  content: "\e901";
+}
+.icon-chat:before {
+  content: "\e902";
+}
+.icon-video:before {
+  content: "\e903";
+}
+.icon-photo:before {
+  content: "\e904";
+}
+.icon-download:before {
+  content: "\e905";
+}
+.icon-blog:before {
+  content: "\e906";
+}
+.icon-home:before {
+  content: "\e900";
+}
+
+
+/***** General Styles *****/
+html, body {
+	font-size: 16px;
+    line-height: 1.7;
+    height: 100%;
+	background-color: #f9f9f9;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #00953e;
+	text-decoration: none;
+	transition: 0.2s ease-in
+}
+
+a:hover {
+	color: rgba(0,0,0,0.7)
+}
+
+img {
+	max-width: 100%
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 5px 0;
+}
+
+.text-center {
+	text-align: center
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+	font-weight: 700
+}
+
+/***** Styles *****/
+main.container {
+    padding: 0;
+	margin: 0;
+	height: 70%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.container section.content .title {
+	color: #21211f;
+	font-size: 7.35rem;
+	padding: 0 2rem;
+	letter-spacing: -0.1rem;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+	font-weight: 900;
+}
+main.container section.content p {
+	color: #21211f;
+	font-size: 0.9rem;
+	letter-spacing: 0.135rem;
+	margin: -0.35rem 0 0 0;
+	padding: 0 0 0 18.5rem;
+	font-family: monospace;
+	font-style: normal;
+	font-weight: 400;
+}
+main.container section.content a {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+	font-weight: 300;
+	background: #fff;
+	color: #21211f;
+	border-radius: 50px;
+	border: 1px solid #21211f;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.25rem;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+}
+main.container section.content a:hover {
+	background: #21211f;
+	color: #fff;
+	font-weight: bold;
+	transition: all 0.5s ease;
+}
+
+/***** Footer *****/
+footer.content {
+	bottom: 0px;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+footer.content .wrap {
+	padding: 15px 0 0 0;
+}
+
+footer.content .wrap p {
+	position:relative;
+	padding: 10px 0;
+}
+
+footer.content a {
+	color: #21211f;
+	padding: 0 0.5rem;
+	font-size: 16px;
+	transition: all 0.5s ease;
+}
+footer.content a:hover {
+	color: #cccccc;
+	transition: all 0.5s ease;
+}
+footer.content a.auther:hover {
+	color: #000000;
+	transition: all 0.5s ease;
+}
+
+/***** Responsiveness *****/
+@media all and (max-width: 740px) {
+	html, body {
+		font-size: 10px;
+	}
+	main.container section.content a {
+		margin: 40px auto;
+		display: block;
+		padding: 1.35rem 1.5rem;
+		font-size: 1.4rem;
+	}
+	main.container section.content p {
+		padding: 2rem 0 0 11rem;
+	}
+}
+@media all and (max-width: 600px) {
+	html, body {
+		font-size: 9px;
+	}
+	main.container section.content a {
+		padding: 1.45rem 1.5rem;
+		margin: 1.5rem 2rem;
+		font-size: 1.5rem;
+	}
+	main.container section.content p {
+		padding: 2rem 0 0 11rem;
+	}
+}
+@media all and (max-width: 480px) {
+	html, body {
+		font-size: 8px;
+	}
+	main.container section.content .title {
+		font-size: 6.5rem;
+	}
+	main.container section.content a {
+		padding: 1.55rem 1.5rem;
+		margin: 1.5rem 2rem;
+		font-size: 1.6rem;
+	}
+	main.container section.content p {
+		padding: 2rem 0 0 4.5rem;
+	}
+}
+
+/***** home *****/
+.home {
+	padding: 0 10px;
+}
+.homepage {
+	max-width: 1200px;
+	margin: 0 auto
+}
+.homepage .home-title{ 
+	font-size: 30px;
+	text-align: center;
+}
+.tab-header{
+    background-color: #F7F7F7;
+    height: 60px;
+}
+.tab-header ul{
+    list-style: none;
+    text-align: center;
+    height:100%;
+    width: 100%;
+    padding: 0 0;
+}
+.tab-header ul li{
+	display:inline-block;
+	width: 100px;
+}
+.tab-header ul li a {
+    color: #828282;
+    font-size: 18px;
+    border-bottom: 1px solid #f9f9f9;
+    padding-bottom: 10px;
+    margin: 0 20px;
+}
+.tab-header ul li a.selected {
+    font-weight: bolder;
+    color: #000000;
+    font-size: 22px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+#external-box {
+	display: flex;
+}
+#inner-box {
+	display: none;
+}
+.mainbox {
+    font-family: inherit;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.mainbox a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7)
+}
+.card {
+	width: 300px;
+	box-shadow: 0px 0px 5px #ccc;
+	border-radius: 2px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.2s ease-in;
+	position: relative
+}
+.card:hover {
+	box-shadow: 0px 0px 15px #aaa
+}
+.card-footer {
+	padding: 5px;
+	margin: 0;
+	border: none
+}
+.card-footer h2 {
+	margin: 0;
+	font-size: 15.5px;
+	color: #828282
+}
+.post-excerpt {
+	font-size: 15.5px;
+	text-align: center !important;
+	margin-bottom: 0.2em;
+	margin-top: 0.2em
+}
+.post-image-index {
+	border-bottom: 1px solid #e8e8e8;
+	width: 300px;
+	height: 200px;
+	position:relative;
+}
+.post-link-index img {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+.post-link-index .time {
+	position: absolute;
+	margin: 0;
+	bottom: 3%;
+	right: 3%
+}
+.post-link-index time {
+	font-size: 15.5px;
+	color: rgba(255,255,255,0.38)
+}

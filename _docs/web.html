@@ -1,0 +1,100 @@
+---
+layout: default
+title: Stuart Hua's Web
+permalink: /web/
+---
+
+<main class="home">
+  <div class="homepage">
+    <h2 class="home-title">Web</h2>
+    <div class="mainbox">
+      <a class="post-link-index" href="javascript:void(0);">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-mc.png">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">MineCraft</h2>
+            <hr>
+            <p class="post-excerpt">MC 服务器：
+              <button class="btn" data-clipboard-text="mc.stuarthua.com">
+              mc.stuarthua.com
+              </button>
+            </p>
+          </div>
+        </div>
+      </a>  
+      <a class="post-link-index" target="_blank" href="https://mcmap.stuarthua.com">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-dynmap.jpg">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">Dynmap</h2>
+            <hr>
+            <p class="post-excerpt">MC 地图插件 - Dynmap</p>
+          </div>
+        </div>
+      </a>
+      <a class="post-link-index" target="_blank" href="https://mcs.stuarthua.com">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-mcsm.jpg">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">MCSM</h2>
+            <hr>
+            <p class="post-excerpt">MC 服务器面板</p>
+          </div>
+        </div>
+      </a>
+      <a class="post-link-index" target="_blank" href="https://image.stuarthua.com">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-chevereto.png">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">Image Hosting</h2>
+            <hr>
+            <p class="post-excerpt">图床</p>
+          </div>
+        </div>
+      </a>
+      <a class="post-link-index" target="_blank" href="https://talk.stuarthua.com">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-flarum.png">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">司徒 Talk</h2>
+            <hr>
+            <p class="post-excerpt">Flarum 论坛：用于记录话题</p>
+          </div>
+        </div>
+      </a>
+      <a class="post-link-index" target="_blank" href="https://matchstick.vip">
+        <div class="card">
+          <div class="post-image-index">
+            <img src="/assets/img/web-matchstick.png">
+          </div>
+          <div class="card-footer">
+            <h2 class="post-index-title">火柴</h2>
+            <hr>
+            <p class="post-excerpt">私用 Shadowsocks-Manager</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+<script src="/assets/js/clipboard.min.js"></script>
+<script>
+  var clipboard = new ClipboardJS('.btn');
+  clipboard.on('success', function(e) {
+    alert('复制成功，尽情游戏吧！');
+  });
+  clipboard.on('error', function(e) {
+    alert('复制失败，请手动选择复制');
+  });
+</script>
+{% include footer.html %}
