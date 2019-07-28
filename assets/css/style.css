@@ -187,9 +187,8 @@ footer.content a:hover {
 	color: #cccccc;
 	transition: all 0.5s ease;
 }
-footer.content a.auther:hover {
-	color: #000000;
-	transition: all 0.5s ease;
+footer.content a.beian {
+	font-size: 14px;
 }
 
 /***** Responsiveness *****/
@@ -219,6 +218,12 @@ footer.content a.auther:hover {
 	main.container section.content p {
 		padding: 2rem 0 0 11rem;
 	}
+	footer.content a.beian {
+		font-size: 8px;
+	}
+	footer.content a {
+		font-size: 10px;
+	}
 }
 @media all and (max-width: 480px) {
 	html, body {
@@ -234,6 +239,12 @@ footer.content a.auther:hover {
 	}
 	main.container section.content p {
 		padding: 2rem 0 0 4.5rem;
+	}
+	footer.content a.beian {
+		font-size: 8px;
+	}
+	footer.content a {
+		font-size: 10px;
 	}
 }
 
