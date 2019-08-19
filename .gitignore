@@ -1,7 +1,3 @@
 _site
 .sass-cache
 .jekyll-metadata
-
-.htaccess
-.user.ini
-.well-known/
