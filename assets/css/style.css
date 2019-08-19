@@ -166,6 +166,7 @@ footer.content {
 	display: block;
 	float: left;
 	width: 100%;
+	font-family: monospace;
 }
 
 footer.content .wrap {
