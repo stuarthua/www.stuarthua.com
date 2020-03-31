@@ -3,63 +3,7 @@
 @import url('/assets/font/google/fonts.css');
 
 /***** IcoMoon 图标字体 *****/
-@font-face {
-  font-family: 'icomoon';
-  src:  url('/assets/font/icomoon/icomoon.eot?p8sxe8');
-  src:  url('/assets/font/icomoon/icomoon.eot?p8sxe8#iefix') format('embedded-opentype'),
-    url('/assets/font/icomoon/icomoon.ttf?p8sxe8') format('truetype'),
-    url('/assets/font/icomoon/icomoon.woff?p8sxe8') format('woff'),
-    url('/assets/font/icomoon/icomoon.svg?p8sxe8#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-pic:before {
-  content: "\e909";
-}
-.icon-wiki:before {
-  content: "\e908";
-}
-.icon-game:before {
-  content: "\e907";
-}
-.icon-mail:before {
-  content: "\e901";
-}
-.icon-chat:before {
-  content: "\e902";
-}
-.icon-video:before {
-  content: "\e903";
-}
-.icon-photo:before {
-  content: "\e904";
-}
-.icon-download:before {
-  content: "\e905";
-}
-.icon-blog:before {
-  content: "\e906";
-}
-.icon-home:before {
-  content: "\e900";
-}
-
+@import url('/assets/font/icomoon/fonts.css');
 
 /***** General Styles *****/
 html, body {
