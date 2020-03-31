@@ -1,3 +1,3 @@
 # Stuart Hua
 
-> personal site
+> Personal Web Site
