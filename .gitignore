@@ -2,5 +2,6 @@
 .sass-cache
 
 # folders
-_site/
+.jekyll-cache/
 .jekyll-metadata/
+_site/
