@@ -1,13 +1,15 @@
-@import url('https://fonts.loli.net/css?family=Raleway:300,900');
+/***** Google Fonts *****/
+/* @import url('https://fonts.loli.net/css?family=Raleway:300,900'); */
+@import url('/assets/font/google/fonts.css');
 
-/***** Web Fonts *****/
+/***** IcoMoon 图标字体 *****/
 @font-face {
   font-family: 'icomoon';
-  src:  url('/assets/font/icomoon.eot?p8sxe8');
-  src:  url('/assets/font/icomoon.eot?p8sxe8#iefix') format('embedded-opentype'),
-    url('/assets/font/icomoon.ttf?p8sxe8') format('truetype'),
-    url('/assets/font/icomoon.woff?p8sxe8') format('woff'),
-    url('/assets/font/icomoon.svg?p8sxe8#icomoon') format('svg');
+  src:  url('/assets/font/icomoon/icomoon.eot?p8sxe8');
+  src:  url('/assets/font/icomoon/icomoon.eot?p8sxe8#iefix') format('embedded-opentype'),
+    url('/assets/font/icomoon/icomoon.ttf?p8sxe8') format('truetype'),
+    url('/assets/font/icomoon/icomoon.woff?p8sxe8') format('woff'),
+    url('/assets/font/icomoon/icomoon.svg?p8sxe8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
