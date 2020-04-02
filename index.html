@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Stuart Hua | Software Engineer, Programmer" />
+  <title>Stuart Hua's Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://stuarthua.com">
+
+  <!-- og -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:description" content="Stuart Hua | Software Engineer, Programmer">
+  <meta property="og:title" content="Stuart Hua's Site">
+  <meta property="og:url" content="https://stuarthua.com">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
+
+  <!-- icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- css & js -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/jquery.min.js"></script>
+
+  <!-- Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55082727-5"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-55082727-5');
+  </script>
+  
+
+</head>
+  <body>
+    <main class="container">
+  <section class="content">
+    <span class="title">Stuart Hua</span>
+    <p id="desc"></p>
+    <a target="_blank" href="https://blog.stuarthua.com/about/">More</a>
+  </section>
+</main>
+
+<footer class="content">
+  <div class="wrap">
+    <p>
+      
+      <a href="https://github.com/stuarthua"><span class="icon-github"></span></a>
+       
+      <a href="mailto:me@stuarthua.com"><span class="icon-mail"></span></a>
+       
+    </p>
+    <p>
+      <a href="https://stuarthua.com">Stuart Hua</a>&nbsp;&copy;2020&nbsp;&nbsp;| <a class="beian" target="_blank" href="http://beian.miit.gov.cn">沪 ICP 备 18001115 号</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // $(document).ready(function() {
+  //   var width = $(document).width();
+  //   var height = $(document).height();
+  //   var w;
+  //   if (width <= 480) {
+  //     w = 480;
+  //   } else if (width <= 800 ) {
+  //     w = 800;
+  //   } else if (width <= 1024 ) {
+  //     w = 1024;
+  //   } else if (width <= 1920 ) {
+  //     w = 1920;
+  //   }
+  //   var img_url = 'https://api.yingjoy.cn/pic/?t=bing&w=' + w;
+  //   var showBackground = function (target, url) {
+  //     $(target).css("background", "url('" + url + "')");
+  //   }
+  //   setTimeout(function () { showBackground("main.container", img_url); }, 3000);
+  // });
+    
+  var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).append(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+  }
+
+  $(function () {
+    showText("#desc", "Software Developer, Life Adventurer", 0, 100);
+  });
+</script>
+  </body>
+</html>
