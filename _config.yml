@@ -10,6 +10,10 @@ bottom_link:
   mail: me@stuarthua.com
   # telegram: stuarthua
 
+# SEO
+## Google Analytics
+ga_track_id: 'UA-55082727-5'
+
 # Advanced settings
 markdown: kramdown
 encoding: utf-8
